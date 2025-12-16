@@ -29,7 +29,8 @@ export default function Navbar(){
               className="text-white text-sm hover:scale-105 active:scale-95  transition-all" >
               Log in
             </button>
-            <button className="text-white text-sm hover:scale-105 active:scale-95  transition-all">
+            <button onClick={() => navigate("/register")}
+              className="text-white text-sm hover:scale-105 active:scale-95  transition-all">
               Sign up
             </button>
           </div>

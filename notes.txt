@@ -1,3 +1,12 @@
+Creating the project (react + tailwindcss with vite):
+1. npm create vite@latest my-app
+2. select react and javascript as the framework
+3. cd to the app directory and run 'npm install'
+4. install tailwindcss 'npm install tailwindcss @tailwindcss/vite'
+5. open vite.config.ts and add 'import tailwindcss from ‘@tailwindcss/vite’;'
+6. Delete App.css and clear index.css
+7. Add '@import “tailwindcss”;' to index.css and ensure it is imported in main.jsx
+
 Button customization:
 1. Padding (px-6 py-3)
 2. Colors (bg-indigo-600 hover: bg-indigo-600 active: bg-indigo-600)

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 // Icons unchanged
 const BookIcon = () => (
@@ -29,6 +30,7 @@ const GithubIcon = () => (
 export default function Home() {
   const section1Ref = useRef(null);
   const [coords, setCoords] = useState({ x: '50%', y: '50%' });
+  const navigate = useNavigate();
 
   useEffect(() => {
     const section1 = section1Ref.current;
@@ -56,7 +58,7 @@ export default function Home() {
         ref={section1Ref}
         className="h-full w-full flex flex-col items-center justify-center p-8 text-white snap-start relative transition-all duration-300"
         style={{
-          background: `radial-gradient(circle at ${coords.x} ${coords.y}, rgba(255, 255, 255, 0.08), transparent 30%), linear-gradient(to bottom right, #111827, #312e81)`
+          background: `radial-gradient(circle at ${coords.x} ${coords.y}, rgba(255, 255, 255, 0.08), transparent 30%), linear-gradient(to bottom right, #111827, #312e81ff)`
         }}
       >
         <div className="max-w-3xl text-center space-y-6">
@@ -66,12 +68,12 @@ export default function Home() {
           <p className="text-lg sm:text-xl font-medium opacity-80 leading-relaxed">
             From personalised gifts to functional parts, every product is designed and 3D printed in-house with precision and care.
           </p>
-          <a
-            href="#section-2"
+          <button
+            onClick={() => navigate('/shop')}
             className="inline-block mt-8 px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105"
           >
             View What We Offer
-          </a>
+          </button>
         </div>
       </section>
 
