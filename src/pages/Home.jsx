@@ -48,13 +48,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth font-sans">
+    <div className="h-full overflow-y-scroll snap-y snap-mandatory scroll-smooth font-sans">
       
       {/* Section 1: Hero */}
       <section
         id="section-1"
         ref={section1Ref}
-        className="h-screen w-full flex flex-col items-center justify-center p-8 text-white snap-start relative transition-all duration-300"
+        className="h-full w-full flex flex-col items-center justify-center p-8 text-white snap-start relative transition-all duration-300"
         style={{
           background: `radial-gradient(circle at ${coords.x} ${coords.y}, rgba(255, 255, 255, 0.08), transparent 30%), linear-gradient(to bottom right, #111827, #312e81)`
         }}
@@ -78,7 +78,7 @@ export default function Home() {
       {/* Section 2: Features */}
       <section
         id="section-2"
-        className="h-screen w-full flex flex-col items-center justify-center p-8 bg-gray-100 text-gray-800 snap-start"
+        className="h-full w-full flex flex-col items-center justify-center p-8 bg-gray-100 text-gray-800 snap-start"
       >
         <div className="max-w-5xl mx-auto text-center space-y-12">
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
@@ -121,7 +121,7 @@ export default function Home() {
       {/* Section 3: About */}
       <section
         id="section-3"
-        className="h-screen w-full flex flex-col items-center justify-center p-8 bg-gray-900 text-white snap-start"
+        className="h-full w-full flex flex-col items-center justify-center p-8 bg-gray-900 text-white snap-start"
       >
         <div className="max-w-3xl text-center space-y-8">
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight drop-shadow-lg">

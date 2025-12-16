@@ -1,0 +1,19 @@
+Button customization:
+1. Padding (px-6 py-3)
+2. Colors (bg-indigo-600 hover: bg-indigo-600 active: bg-indigo-600)
+3. Text (text-white)
+4. Border(border-white rounded-sm)
+5. Fancy interaction (hover: scale-105 active: scale-95)
+6. Drop shadow (shadow-lg)
+7. Transitions (transition-all)
+8. Disabled state (disabled: opacity-50)
+
+Elements involving 'active' are activated upon clicking the button
+
+div customization
+1. Vertical stacking (flex-col)
+2. Spacing between child items (space-y-10)
+3. Centering (items-center, justify-center)
+
+input customization
+1. 
